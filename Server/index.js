@@ -13,7 +13,7 @@ app.use('/api', route);
 
 const PORT = process.env.PORT || 8000;
 const MONGOURL = process.env.MONGO_URL;
-console.log("DB HOST:", process.env.DB_HOST);
+console.log(process.env.PORT,"DB HOST:", process.env.MONGO_URL);
 
 mongoose.connect(MONGOURL)
   .then(() => {
